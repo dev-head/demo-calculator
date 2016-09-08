@@ -64,10 +64,6 @@ Use
 ```
 php bin/console calc "1 1 +"
 ```
-#### Run trello archive board task manually.
-```
-php bin/console trello:archive_board -c config/load-trello.json
-```
 
 Testing
 -------
