@@ -1,0 +1,18 @@
+{
+  "name"    : "demo-calculator",
+  "version" : "0.0.1",
+  "cpus"    : 1,
+  "ram"     : 512,
+  "ip"      : "172.73.10.12",
+  "box"     : "centos/7",
+  "env"     : "dev",
+  "projects" : [
+    {
+      "name": "demo-calculator.dev",
+      "path_host" : ".",
+      "path_remote" : "/srv/demo-calculator",
+      "provision_scripts": ["provision.sh"]
+    }
+  ]
+
+}

@@ -1,0 +1,35 @@
+{
+  "name": "dev-head/demo-calculator",
+  "type": "library",
+  "description": "Just a demo app that is used to calculate expressions",
+  "authors": [
+    {
+      "name": "Dev Head",
+      "email": "me@example.com"
+    }
+  ],
+  "config": {
+    "optimize-autoloader": true
+  },
+  "keywords" : ["vagrant php cli"],
+  "homepage": "https://github.com/dev-head/demo-calculator",
+  "license" : "MIT",
+
+  "require": {
+    "cilex/cilex": "dev-master",
+    "doctrine/inflector": "^1.1"
+  },
+
+  "require-dev": {
+    "peridot-php/peridot": "~1.15",
+    "peridot-php/leo": "~1.0"
+
+  },
+
+  "autoload": {
+    "psr-4": {
+      "devhead\\Clapi\\": "src/clapi",
+      "devhead\\Calculator\\": "src/calculator"
+    }
+  }
+}
